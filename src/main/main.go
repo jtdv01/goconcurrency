@@ -11,5 +11,7 @@ func main(){
     // Channels
     // I.MainChannels()
     // I.MainSingleChannel()
-    I.MainBufferedChannels()
+    // I.MainBufferedChannels()
+
+    I.MainNonBlocking()
 }
