@@ -43,6 +43,22 @@ func MainNonBlocking() {
 			if moreRedVelvet {
 				fmt.Printf("Got a cake from the second factory: %s\n", cake)
 			}
+
+		/**
+			VERY IMPORTANT CONCEPT!
+
+			If a cake takes more than the alloted time, finish
+			Got a cake from the first factory: chocolate
+			Got a cake from the first factory: chocolate
+			Got a cake from the first factory: chocolate
+			Got a cake from the second factory: red velvet
+
+			Might fail here, but i still want the rest to be delivered!
+			Timed out!
+		**/
+		case <- time.After(250 * time.Millisecond):
+			fmt.Println("Timed out!")
+			return
 		}
 	}
 
