@@ -10,5 +10,6 @@ func main(){
 
     // Channels
     // I.MainChannels()
-    I.MainSingleChannel()
+    // I.MainSingleChannel()
+    I.MainBufferedChannels()
 }
