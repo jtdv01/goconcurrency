@@ -1,7 +1,8 @@
 package main
 
 import (
-    I "goconcurrency/intro"
+    // I "goconcurrency/intro"
+    Barry "goconcurrency/barycenter"
 )
 
 func main(){
@@ -13,5 +14,7 @@ func main(){
     // I.MainSingleChannel()
     // I.MainBufferedChannels()
 
-    I.MainNonBlocking()
+    // I.MainNonBlocking()
+
+    Barry.NaiveBarycenterDataset()
 }
