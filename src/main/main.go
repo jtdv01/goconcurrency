@@ -6,5 +6,9 @@ import (
 
 func main(){
     // I.MainGoRoutines()
-    I.MainSharedMemory()
+    // I.MainSharedMemory()
+
+    // Channels
+    // I.MainChannels()
+    I.MainSingleChannel()
 }
