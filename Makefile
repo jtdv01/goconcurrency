@@ -2,6 +2,9 @@ TOPDIR=$(shell pwd)
 SRCDIR:=$(shell echo `pwd`/src)
 CDDIR=cd $(SRCDIR)
 
-all:
-	$(CDDIR) && go run main/main.go
+main:
+	$(CDDIR) && go build -o $(TOPDIR)/bin/main main/main.go
+
+all: main
+	./bin/main
 
