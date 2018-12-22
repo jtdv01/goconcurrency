@@ -2,7 +2,7 @@ package main
 
 import (
     I "github.com/jtdv01/goconcurrency/intro"
-    Barry "github.com/jtdv01/goconcurrency/barycenter"
+    Barycenter "github.com/jtdv01/goconcurrency/barycenter"
     "os"
     "fmt"
 	"strconv"
@@ -40,11 +40,11 @@ func main(){
     /**
         Chapter 3: Data Parallelism
     **/
-    if task == "generateBarrycenter" {
+    if task == "generateBarycenter" {
 	    nBodies, err := strconv.Atoi(os.Args[2])
         if err != nil {
             os.Exit(1)
         }
-        Barry.NaiveBarycenterDataset(nBodies)
+        Barycenter.GenerateBarycenterDatasets(nBodies)
     }
 }
