@@ -1,24 +1,13 @@
 package barycenter
 
 import (
-	"os"
 	"math/rand"
 	"time"
-	"strconv"
 	"fmt"
 )
 
-func NaiveBarycenterDataset() {
-	if len(os.Args) < 2{
-		fmt.Println(fmt.Errorf("Not enough args!"))
-		os.Exit(1)
-	}
+func NaiveBarycenterDataset(nBodies int) {
 
-	nBodies, err := strconv.Atoi(os.Args[1])
-
-	if err != nil {
-		os.Exit(1)
-	}
 
 	rand.Seed(time.Now().Unix())
 
