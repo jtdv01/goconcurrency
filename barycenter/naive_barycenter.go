@@ -9,7 +9,7 @@ import (
 )
 
 type MassPoint struct {
-	x, y, z, mass float32
+	x, y, z, mass int
 }
 
 func addMassPoints(a, b MassPoint) MassPoint {
@@ -104,7 +104,7 @@ func NaiveBarycenter(filename string){
 	}
 	systemAverage = masspoints[0]
 	fmt.Println("System average: ", systemAverage)
-	fmt.Printf("System barycenter is at (%f, %f, %f) and the system's mass is %f.\n",
+	fmt.Printf("System barycenter is at (%d, %d, %d) and the system's mass is %d.\n",
 	systemAverage.x,
 	systemAverage.y,
 	systemAverage.z,

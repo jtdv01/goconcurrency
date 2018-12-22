@@ -51,7 +51,10 @@ func main(){
 	    filename := os.Args[2]
         fmt.Println("Reading ", filename)
         Barycenter.NaiveBarycenter(filename)
-
+    } else if task == "parallelBarycenter"{
+	    filename := os.Args[2]
+        fmt.Println("Reading ", filename)
+        Barycenter.ParallelBarycenter(filename)
     }
 
 }
