@@ -46,5 +46,11 @@ func main(){
             os.Exit(1)
         }
         Barycenter.GenerateBarycenterDatasets(nBodies)
+    } else if task == "naiveBarycenter"{
+	    filename := os.Args[2]
+        fmt.Println("Reading ", filename)
+        Barycenter.NaiveBarycenter(filename)
+
     }
+
 }
