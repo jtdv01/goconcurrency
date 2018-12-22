@@ -33,3 +33,8 @@ go.mod should now contain:
 ```
 module github.com/jtdv01/goconcurrency
 ```
+
+
+# Datasets
+
+Create these datasets using `make barycenter_datasets`

@@ -41,6 +41,7 @@ func main(){
         Chapter 3: Data Parallelism
     **/
     if task == "generateBarycenter" {
+        // Create these datasets using `make barycenter_datasets`
 	    nBodies, err := strconv.Atoi(os.Args[2])
         if err != nil {
             os.Exit(1)

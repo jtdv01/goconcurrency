@@ -9,7 +9,7 @@ import (
 )
 
 type MassPoint struct {
-	x, y, z, mass int
+	x, y, z, mass float32
 }
 
 func addMassPoints(a, b MassPoint) MassPoint {
