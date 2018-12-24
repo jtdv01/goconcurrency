@@ -3,6 +3,11 @@
 From O'Reilly course Hands on Go Concurrency:
 https://learning.oreilly.com/videos/hands-on-concurrency-with/9781788993746
 
+
+And Distributed Computing with Go:
+https://learning.oreilly.com/library/view/distributed-computing-with/9781787125384/
+
+
 Reference on how to leverage Go's concurrency and patterns.
 
 # Modules

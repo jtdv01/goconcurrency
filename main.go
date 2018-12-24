@@ -35,6 +35,10 @@ func main(){
         I.MainBufferedChannels()
     } else if task == "nonBlockingCakeFactory"{
         I.MainNonBlocking()
+    } else if task == "parallelism"{
+        I.MainParallelism()
+    } else if task == "serialTasks"{
+        I.MainSerialTasks()
     }
 
 
@@ -57,8 +61,9 @@ func main(){
         fmt.Println("Reading ", filename)
         Barycenter.ParallelBarycenter(filename)
     } else if task == "nonConcurrentNewsclient" {
-        fmt.Println("Starting non-concurrent news client")
         Newsclient.NonconcurrentNewsclient()
+    } else if task == "concurrentNewsclient" {
+        Newsclient.ConcurrentNewsclient()
     }
 
 }

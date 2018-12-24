@@ -48,6 +48,7 @@ func newHnStories() []Story {
 }
 
 func NonconcurrentNewsclient() {
+    fmt.Println("Starting non-concurrent news client")
 	const storiesFile = "stories.txt"
 	hnStories := newHnStories()
 	fmt.Println(hnStories)
