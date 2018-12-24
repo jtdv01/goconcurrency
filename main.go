@@ -5,7 +5,8 @@ import (
     Barycenter "github.com/jtdv01/goconcurrency/barycenter"
     "os"
     "fmt"
-	"strconv"
+    "strconv"
+    Newsclient "github.com/jtdv01/goconcurrency/newsclient"
 )
 
 func main(){
@@ -55,6 +56,9 @@ func main(){
 	    filename := os.Args[2]
         fmt.Println("Reading ", filename)
         Barycenter.ParallelBarycenter(filename)
+    } else if task == "nonConcurrentNewsclient" {
+        fmt.Println("Starting non-concurrent news client")
+        Newsclient.NonconcurrentNewsclient()
     }
 
 }
