@@ -3,6 +3,7 @@ package main
 import (
     I "github.com/jtdv01/goconcurrency/intro"
     Barycenter "github.com/jtdv01/goconcurrency/barycenter"
+    BooksHandler "github.com/jtdv01/goconcurrency/booksHandler"
     "os"
     "fmt"
     "strconv"
@@ -39,6 +40,8 @@ func main(){
         I.MainParallelism()
     } else if task == "serialTasks"{
         I.MainSerialTasks()
+    } else if task == "booksHandler"{
+        BooksHandler.Main()
     }
 
 
